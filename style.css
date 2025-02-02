@@ -62,8 +62,10 @@ hr {
 }
 .parent .omelette .young {
     font-size: 3em;
-    margin-top: 20px;
+    margin-top: 50px;
     line-height: 0.1;
+    font-weight: 600 ;
+    color:hsl(24, 5%, 18%)
 }
 /* styling the second dive */
 .parent .time {
