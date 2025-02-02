@@ -7,10 +7,10 @@
 }
 *{
     box-sizing: border-box;
+    font-family:"Outfit", serif ;
 }
 body{
     background-color: #F3E5D8;
-    font-family:var(--outfit) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,25 +18,44 @@ body{
 .young{
     font-family: var(--young);
 }
+span{
+    font-weight: bold;
+    line-height: 2;
+    color: hsl(30, 10%, 34%);
+}
+hr {
+    width:80% ;
+    color:hsl(30, 18%, 87%);
+    opacity: 0.3;
+    margin-top: -100px;
+}
+.samep{
+    font-size: 1.8em;
+    color: hsl(14, 45%, 36%);
+}
+/* styling parent */
 .parent{
     background-color: #fff;
-   width: 800px;
-   height: 230vh;
-   display: flex; 
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
+    width: 800px;
+    height: 230vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+/* setting the width for all divs in the parent */
 .parent .same{
     width: 80%;
     height:300px;
 }
+/* styling the first div */
 .parent .omelette img{
     width: 100%;
     height: 100%;
     border-radius: 15px;
     
 }
+/* styling the second dive */
 .parent .time {
     background-color: hsl(330, 100%, 98%);
     height: auto;
@@ -49,19 +68,20 @@ body{
     font-size: 1.3em;
     color: hsl(332, 51%, 32%);
 }
-.parent .time span{
+/* .parent .time span{
     font-weight: bold;
     line-height: 2;
     color: hsl(30, 10%, 34%);
-}
+} */
+/* third div */
 .parent .ingredients{
     margin-top: -120px;
     height: auto;
 }
-.parent .ingredients p {
+/* .parent .ingredients p {
     font-size: 1.8em;
     color: hsl(14, 45%, 36%);
-}
+} */
 .parent .ingredients ul li::marker{
     color: hsl(14, 45%, 36%);
 }
@@ -69,3 +89,47 @@ body{
 
     line-height: 2.3;
 }
+/* fourth div */
+.parent .instructions {
+    margin-top: -120px;
+    height: auto;
+}
+/* .parent .instructions p {
+    font-size: 1.8em;
+    color: hsl(14, 45%, 36%);
+} */
+.parent .instructions ol li {
+    line-height: 2;
+}
+.parent .instructions ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+/* fifth div */
+.parent .nutrition{
+    margin-top: -120px;
+    height: auto;
+}
+/* .parent .nutrition p {
+    font-size: 1.8em;
+    color: hsl(14, 45%, 36%);
+} */
+.parent .nutrition table {
+    width: 100%;
+    padding:10px;
+}
+.nutrition table{
+    border-collapse: collapse; 
+}
+.nutrition table tr{
+    border-bottom: 1px solid #ddd;
+    line-height:1.8;
+}
+.amounts{
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+    font-size: 1.1em;
+    font-family: var(--outfit);
+}
+
+
